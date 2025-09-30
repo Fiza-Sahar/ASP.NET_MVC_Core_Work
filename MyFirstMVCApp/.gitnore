@@ -1,0 +1,35 @@
+# Visual Studio cache folder
+.vs/
+
+# Build folders
+bin/
+obj/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Database files
+*.mdf
+*.ldf
+
+# Visual Studio generated files
+*.dbmdl
+*.jfm
+
+# Others
+*.cache
+*.pdb
+*.dll
+
+# Visual Studio folder
+.vs/
+
+# Build folders
+bin/
+obj/
