@@ -9,7 +9,18 @@ namespace MyFirstMVCApp.Controllers
         //[Route("")]
        public ActionResult index()
         {
+
+            
+            ViewData["Var1"] = "Message from view Data";
+            ViewBag.Var2 = "Message from View Bag";
+            TempData["Var3"] = "Message from TempData";
             return View();
+        }
+
+        public ActionResult About() { 
+        
+        return View();
+        
         }
 
         

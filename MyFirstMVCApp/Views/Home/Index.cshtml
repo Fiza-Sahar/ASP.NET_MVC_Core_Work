@@ -7,3 +7,80 @@
     This is our first MVC Project.....!
 </p>
 
+@* View data example *@
+
+<h2>@ViewData["Message"]</h2>
+<h2>@ViewData["CurrentTime"]</h2>
+
+@* View Bag example *@
+
+<h2>@ViewBag.Message</h2>
+
+<p>Number 1: @ViewBag.Number1</p>
+<p>Number 2: @ViewBag.Number2</p>
+<p>Sum: @ViewBag.Sum</p>
+
+
+
+@* 1. Embedding C# in HTML *@
+<h2>Hello Razor Syntax!</h2>
+<p>Current Date: @DateTime.Now</p>
+
+
+
+@* 2. Variables in Razor *@
+@{
+    var name = "Sara";
+    var age = 21;
+}
+<p>Name: @name</p>
+<p>Age: @age</p>
+
+
+
+@* 3. Loops *@
+<ul>
+    @for (int i = 1; i <= 5; i++)
+    {
+        <li>Item @i</li>
+       
+    }
+</ul>
+
+
+
+@* 4. Conditional Statements *@
+@if (DateTime.Now.Hour < 12)
+{
+    <p>Good Morning!</p>
+}
+else
+{
+    <p>Good Afternoon!</p>
+}
+
+@* 5. Switch Statement *@
+
+@{
+    int number = 2;
+}
+
+@switch (number)
+{
+    case 1:
+        <p>Number is One</p>
+        break;
+
+    case 2:
+        <p>Number is Two</p>
+        break;
+
+    case 3:
+        <p>Number is Three</p>
+        break;
+
+    default:
+        <p>Number is something else</p>
+        break;
+}
+
